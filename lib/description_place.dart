@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+
 class DescriptionPlace extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-
   //Este es el Widget de las estrellas
     final starIconContainer =  Container(
       margin: EdgeInsets.only(
@@ -14,7 +15,30 @@ class DescriptionPlace extends StatelessWidget {
         Icons.star,
         color: Color(0xFFf2C611),
       ),
+    ); 
+
+    final starHalf =  Container(
+      margin: EdgeInsets.only(
+        top: 323.0,
+        right: 3.0
+      ),
+      child: Icon(
+        Icons.star_half,
+        color: Color(0xFFf2C611),
+      ),
     );   
+
+    final starBorder =  Container(
+      margin: EdgeInsets.only(
+        top: 323.0,
+        right: 3.0
+      ),
+      child: Icon(
+        Icons.star_border,
+        color: Color(0xFFf2C611),
+      ),
+    );   
+
 
   //Este es el widget del titulo 
     final titleStarsContainer = Row(
@@ -26,7 +50,7 @@ class DescriptionPlace extends StatelessWidget {
             right: 20.0
           ),
           child: Text(
-            "Duwili Ella",
+            "Dublin",
             style: TextStyle(
               fontSize: 30.0,
               fontWeight: FontWeight.w900
@@ -39,8 +63,8 @@ class DescriptionPlace extends StatelessWidget {
             starIconContainer,
             starIconContainer,
             starIconContainer,
-            starIconContainer,
-            starIconContainer
+            starHalf,
+            starBorder
           ], 
         )
       ], 
@@ -53,7 +77,7 @@ class DescriptionPlace extends StatelessWidget {
         right: 20.0
       ),
       child: Text(
-        "Elit excepteur amet Lorem est laborum ipsum culpa elit fugiat est nisi minim. Tempor id adipisicing est aliquip est ex adipisicing dolore veniam sit anim quis non velit. Voluptate incididunt esse dolore dolore ut esse in mollit aliqua mollit adipisicing enim ex. Tempor ut tempor commodo nostrud magna et.",
+       "Commodo proident aute proident voluptate amet ea officia commodo magna commodo voluptate. Veniam do dolore magna excepteur dolore occaecat. Eiusmod pariatur consectetur ad ut cupidatat. Dolore esse ea enim ex mollit magna nostrud pariatur in id occaecat veniam consectetur ut.",
         style: TextStyle(
           fontSize: 16.0
         ),
